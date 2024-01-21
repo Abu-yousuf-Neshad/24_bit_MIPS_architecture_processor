@@ -77,3 +77,8 @@ b) Programs that require checking conditions
 c) Loop type of programs
 
 d) Bubble sort
+![5](https://github.com/Abu-yousuf-Neshad/24_bit_MIPS_architecture_processor/assets/113527483/7113de3c-c9ec-47fd-8b6f-3d3992f0a9dd)
+![4](https://github.com/Abu-yousuf-Neshad/24_bit_MIPS_architecture_processor/assets/113527483/c4d53790-e5cf-462b-bfa7-412c8009e07e)
+![3](https://github.com/Abu-yousuf-Neshad/24_bit_MIPS_architecture_processor/assets/113527483/d1383cc5-4f1b-4730-97d6-3c160fa2029e)
+![1](https://github.com/Abu-yousuf-Neshad/24_bit_MIPS_architecture_processor/assets/113527483/cfa3affa-8e8e-410f-81a7-73726c58fd7a)
+![2](https://github.com/Abu-yousuf-Neshad/24_bit_MIPS_architecture_processor/assets/113527483/89e9ac28-3184-4224-a038-b22cf93a0c5c)
