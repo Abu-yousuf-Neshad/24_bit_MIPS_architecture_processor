@@ -1,0 +1,98 @@
+
+c code:
+
+#include <stdio.h>
+int main() {
+    int n = 10; // The first number in the series
+    int sum = 0;
+    int i=0;
+    int j=3;
+
+   while(i!=n){
+        sum += j; // Add the current number to the sum
+        i+=1;
+        j+=3;// Increment n by 3 to get the next number in the series
+    }
+
+    printf("The sum : %d\n",sum);
+
+    return 0;
+}
+
+
+Assembly:
+
+ 0. addi   r0, r2, 10
+    opcode rs  rd  im
+    0001   00000 00010 00000 01010
+    10080a
+
+ 1. addi   r0, r1, 0
+    opcode rs  rd  im
+    0001   00000 00001 00000 00000
+    100400
+
+ 2. addi   r0, r3, 0
+    opcode rs  rd  im
+    0001   00000 00011 00000 00000
+    100C00
+
+ 3. addi   r0, r4, 3
+    opcode rs  rd  im
+    0001   00000 00100 00000 00011 
+    101003
+
+ 4. beq    r2, r3, 6
+    opcode rs  rd  im
+    1000   00010 00011 00000 00110
+    810C06
+
+ 5. M[r3+0]<-r4
+    opcode rs rd im
+    1010   r3 r4 0
+    1010   00011 00100 00000 00000
+    a19000
+
+ 6. Add    r1, r4, r1
+    opcode rs  rt  rd shmt
+    00000  00001 00100 00001 00000
+    009020
+
+ 7. Addi R3 R3 1
+    opcode rs rd im
+    0001   00011 00011 00000 00001
+    118C01
+
+ 8. Addi R4 R4 3
+    opcode rs rd im
+    0001   00100 00100 00000 00011
+    121003
+
+ 9. jump 4
+     opcode address
+     0111   00000 00000 00000 00100
+     700004
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
